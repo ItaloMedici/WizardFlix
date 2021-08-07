@@ -10,6 +10,9 @@
   --grey: #696b78;
   --light-grey: #9294a0;
   --soft-white: #c8c9d0;
+  --transparent-white: #c8c9d013;
+  --dark-purple-03: rgba(48, 14, 112, 0.3);
+  --dark-purple-05: rgba(48, 14, 112, 0.5);
 }
 
 * {
@@ -36,7 +39,10 @@ header .container {
 
 .logo {
   font-family: "Bluu Next";
-  color: var(--gold);
+  background-image: linear-gradient(0deg, var(--gold) 50%, #f5c681 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -110,21 +116,41 @@ header .container {
 .mainMovieDesciption {
   font-size: 12px;
   line-height: 1.7;
+  opacity: .8;
 }
 
 .buttons .btn{
-  color: var(--soft-white);
-  padding: 8px 20px;
   border-radius: 8px;
-  margin-right: 5px;
-  background-color: #696b7821;
-  border: 1px solid #696b7844;
+  transition: .5s ease all;
+/*   position: relative; */
+  cursor: pointer;
 }
 
-/* .buttons .watch::before {
-  content:'';
-  width: 5px;
-  height: 5px;
-  background-color: red;
-  position: absolute;
-} */
+.buttons .watchlist {
+  color: var(--grey);
+  background-color: transparent;
+  border: 1px solid #696b7844;
+  padding: 8px 15px;
+  margin-right: 8px;
+}
+
+.buttons .watch {
+  color:rgb(154, 118, 252);
+  background-color: var(--dark-purple-03);
+  border: 1px solid var(--dark-purple-05);
+  padding: 8px 40px;
+}
+
+.buttons .btn i {
+  margin-right: 10px;
+}
+
+
+.buttons .watch:hover {
+  background-color: var(--dark-purple-05);
+  box-shadow: 0 8px 15px var(--dark-purple-03);
+}
+
+.buttons .watchlist:hover {
+  background-color: var(--transparent-white);
+}
