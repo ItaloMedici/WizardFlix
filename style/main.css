@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Bluu Next";
+  src: url("../src/font/BluuNext-Bold.otf");
+}
+
+:root {
+  --gold: #aa8855;
+  --dark-blue: #10141b;
+  --light-blue: #242633;
+  --grey: #696b78;
+  --light-grey: #9294a0;
+  --soft-white: #c8c9d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark-blue);
+  color: var(--soft-white);
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--light-blue);
+  padding: 10px 25px;
+  border-bottom: solid 1px var(--grey);
+}
+
+.logo {
+  font-family: "Bluu Next";
+  color: var(--gold);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 80px 80px 145px;
+}
+
+.content a {
+  text-decoration: none;
+  width: 100%;
+  color: var(--light-grey);
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: 0.5s;
+}
+
+.content a + a::before {
+  content: url(../src/img/dot.svg);
+  transform: translate3d(-50%, -50%, 0);
+  width: 10px;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 25%;
+}
+
+.content a:hover {
+  color: var(--soft-white);
+}
+/* End header */
+
+/* Main movie card */
+.mainMovie {
+  height: 500px;
+  background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0, 0.8) 30%,
+      rgba(0, 0, 0, 0) 80%
+    ),
+    url("/src/img/fantasticBeastsCover2.jpg");
+  background-size: cover, 100%;
+  background-position-x: 0, 250px;
+  background-position-y: 0, -40px;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px;
+}
+
+.mainMovie .container {
+  width: 35%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logoMovie {
+  background: url("/src/img/logoFBs.png");
+  height: 130px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mainMovieDesciption {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.buttons .btn{
+  color: var(--soft-white);
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-right: 5px;
+  background-color: #696b7821;
+  border: 1px solid #696b7844;
+}
+
+/* .buttons .watch::before {
+  content:'';
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+} */
