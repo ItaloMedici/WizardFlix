@@ -1,0 +1,103 @@
+@media screen and (max-width: 1080px) {
+  .mainMovie .container {
+    width: 45%;
+  }
+
+  .mainMovie .logoMovie {
+    height: 104px;
+  }
+
+  .mainMovie .mainMovieDesciption {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainMovie .logoMovie {
+    height: 97px;
+  }
+
+  .mainMovie .container {
+    width: 56%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mainMovie {
+    height: 500px;
+    background: linear-gradient(
+        0deg,
+        rgb(0, 0, 0, 0.8) 48%,
+        rgba(0, 0, 0, 0) 72%
+      ),
+      url("/src/img/fantasticBeastsCover2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .mainMovie .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  .container .logo {
+    margin-bottom: 12px;
+  }
+
+  header .content a {
+    font-size: 14px;
+  }
+
+  header .content a + a::before {
+    width: 5px; 
+    height: 5px;
+  }
+
+  header .content {
+    margin-bottom: 5px;
+  }
+
+  .mainMovie {
+    background-position-x: 0, center;
+    padding: 25px 15px;
+  }
+
+  .mainMovie .logoMovie {
+    height: 80px;
+    width: 100%;
+    background-position-x: center;
+    margin-bottom: 25px;
+  }
+
+  .mainMovie .container {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .mainMovie .mainMovieDesciption {
+    display: none;
+  }
+
+  .carousel-header h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .watchlist p {
+    display: none;
+  }
+
+  .buttons .btn i{
+    margin-right: 0px;
+  }
+  
+  i.fas.fa-play {
+    margin-right: 10px;
+  }
+} 

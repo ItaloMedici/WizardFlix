@@ -86,9 +86,8 @@ header .container {
       rgba(0, 0, 0, 0) 80%
     ),
     url("/src/img/fantasticBeastsCover2.jpg");
-  background-size: cover, 100%;
+  background-size: cover;
   background-position-x: 0, 250px;
-  background-position-y: 0, -40px;
   background-repeat: no-repeat;
 
   display: flex;
@@ -119,11 +118,16 @@ header .container {
   opacity: .8;
 }
 
+.buttons{
+  display: flex;
+}
+
 .buttons .btn{
   border-radius: 8px;
   transition: .5s ease all;
-/*   position: relative; */
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .buttons .watchlist {
@@ -153,4 +157,32 @@ header .container {
 
 .buttons .watchlist:hover {
   background-color: var(--transparent-white);
+}
+
+/* Carousel */
+
+.carousel-wf {
+  margin: 0 20px;
+}
+
+.carousel-header {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-header h2 {
+  font-family: "Bluu Next";
+  font-size: 35px;
+  color: var(--gold)
+}
+
+.carousel-header hr {
+  flex: 1;
+  margin-left: 15px;
+  border: .5px solid var(--light-blue);
+}
+
+.card-film {
+  border-radius: 8px;
 }
