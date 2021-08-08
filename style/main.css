@@ -85,7 +85,7 @@ header .container {
       rgb(0, 0, 0, 0.8) 30%,
       rgba(0, 0, 0, 0) 80%
     ),
-    url(/src/img/fantasticBeastsCover2.jpg);
+    url(../src/img/fantasticBeastsCover2.jpg);
   background-size: cover;
   background-position-x: 0, 250px;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@ header .container {
 }
 
 .logoMovie {
-  background: url(/src/img/logoFBs.png);
+  background: url(../src/img/logoFBs.png);
   height: 130px;
   background-size: contain;
   background-repeat: no-repeat;
