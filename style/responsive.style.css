@@ -30,7 +30,7 @@
         rgb(0, 0, 0, 0.8) 48%,
         rgba(0, 0, 0, 0) 72%
       ),
-      url("/src/img/fantasticBeastsCover2.jpg");
+      url(/src/img/fantasticBeastsCover2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
